@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ 
+                               http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2002-11-13T12:52:33Z</responseDate>
+<request verb="GetRecord" identifier="oai:ethos.ac.uk:1" metadataPrefix="uketd_dc">http://naca.central.cranfield.ac.uk/uketd/</request>
+  <GetRecord>
+    <record>
+      <header>
+        <identifier>oai:ethos.ac.uk:1</identifier>
+        <datestamp>2002-06-07T14:38:01Z</datestamp>
+      </header>
+      <metadata>
+<uketd_dc:uketddc
+             xmlns:uketd_dc="http://naca.central.cranfield.ac.uk/uketd/"
+             xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:dcterms="http://purl.org/dc/terms/"
+             xmlns:uketdterms="http://naca.central.cranfield.ac.uk/uketd/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://naca.central.cranfield.ac.uk/uketd/ http://naca.central.cranfield.ac.uk/uketd/uketd_dc.xsd">
+  <dc:title>Title</dc:title>
+  <dcterms:alternative>Alternative Title</dcterms:alternative>
+  <dc:creator>Author</dc:creator>
+  <uketdterms:authoridentifier xsi:type="uketdterms:HUSID">HUSID author identifier</uketdterms:authoridentifier>
+  <uketdterms:advisor>Supervisor(s)/advisor</uketdterms:advisor>
+  <uketdterms:sponsor>Sponsor/Funding body</uketdterms:sponsor>
+  <uketdterms:grantnumber>Grant number/funding code</uketdterms:grantnumber>
+  <dc:subject>Subject keywords</dc:subject>
+  <dc:subject xsi:type="dcterms:DDC">Subject DDC</dc:subject>
+  <dcterms:abstract>Abstract</dcterms:abstract>
+  <uketdterms:institution>Institution</uketdterms:institution>
+  <uketdterms:department>College, Department, etc.</uketdterms:department>
+  <uketdterms:commercial>Commercial publisher</uketdterms:commercial>
+  <dcterms:issued>Date of submission (date on coversheet of thesis)</dcterms:issued>
+  <dcterms:dateAccepted>Date of Award</dcterms:dateAccepted>
+  <dc:type>Thesis or dissertation</dc:type>
+  <uketdterms:qualificationlevel>Qualification level</uketdterms:qualificationlevel>
+  <uketdterms:qualificationname>Qualification name</uketdterms:qualificationname>
+  <dc:language xsi:type="dcterms:ISO639-2">Language</dc:language>
+  <dcterms:hasVersion>Citations</dcterms:hasVersion>
+  <dcterms:references>Included/Quoted work</dcterms:references>
+  <dcterms:isReferencedBy>Metadata jump-off page</dcterms:isReferencedBy>
+  <dc:rights>Rights</dc:rights>
+  <uketdterms:embargotype>Embargo type, e.g. Partial, Total</uketdterms:embargotype>
+  <uketdterms:embargodate>Embargo date</uketdterms:embargodate>
+  <uketdterms:embargoreason>Embargo reason</uketdterms:embargoreason>
+  <dc:identifier xsi:type="dcterms:URI">http://some.url</dc:identifier>
+</uketd_dc:uketddc>
+      </metadata>
+    </record>
+  </GetRecord>
+  </OAI-PMH>
+

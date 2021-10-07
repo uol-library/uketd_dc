@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           targetNamespace="http://naca.central.cranfield.ac.uk/uketd/terms/"
+           xmlns="http://naca.central.cranfield.ac.uk/uketd/terms/"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      UKETD Terms XML Schema
+
+      Created 2005-06-28 by Paul Needham (paul.needham11@btinternet.com).
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+             schemaLocation="http://www.w3.org/2001/03/xml.xsd">
+  </xs:import>
+
+   <xs:import namespace="http://purl.org/dc/terms/"
+              schemaLocation="dcterms.xsd"/>
+
+   <xs:import namespace="http://purl.org/dc/elements/1.1/"
+              schemaLocation="dc.xsd"/>
+
+   <xs:import namespace="http://purl.org/dc/dcmitype/"
+              schemaLocation="dcmitype.xsd"/>
+
+  <xs:element name="authoridentifier" substitutionGroup="dc:creator" />
+  <xs:element name="advisor" substitutionGroup="dc:contributor" />
+  <xs:element name="sponsor" substitutionGroup="dc:contributor" />
+  <xs:element name="checksum" substitutionGroup="dc:format" />
+  <xs:element name="grantnumber" substitutionGroup="dc:identifier" />
+  <xs:element name="institution" substitutionGroup="dc:publisher" />
+  <xs:element name="department" substitutionGroup="dc:publisher" />
+  <xs:element name="commercial" substitutionGroup="dc:publisher" />
+  <xs:element name="embargotype" substitutionGroup="dc:rights" />
+  <xs:element name="embargodate" substitutionGroup="dc:rights" />
+  <xs:element name="embargoreason" substitutionGroup="dc:rights" />
+  <xs:element name="qualificationname" substitutionGroup="dc:type" />
+  <xs:element name="qualificationlevel" substitutionGroup="dc:type" />
+
+  <xs:complexType name="MD5">
+   <xs:simpleContent>
+    <xs:restriction base="dc:SimpleLiteral">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+        <xs:attribute ref="xml:lang" use="prohibited"/>
+    </xs:restriction>
+   </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="SHA1">
+   <xs:simpleContent>
+    <xs:restriction base="dc:SimpleLiteral">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+        <xs:attribute ref="xml:lang" use="prohibited"/>
+    </xs:restriction>
+   </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="HUSID">
+   <xs:simpleContent>
+    <xs:restriction base="dc:SimpleLiteral">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+        <xs:attribute ref="xml:lang" use="prohibited"/>
+    </xs:restriction>
+   </xs:simpleContent>
+  </xs:complexType>
+
+
+</xs:schema>

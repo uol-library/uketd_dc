@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:dcterms="http://purl.org/dc/terms/"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Qualified DC container XML Schema
+ 
+      Created 2005-06-28
+
+      Created by Paul Needham (paul.needham@btinternet.com).
+
+      This schema declares a container element for a Qualified DC application. 
+      
+      The declaration of the uketddc element uses the dcterms:elementOrRefinementContainer
+      complexType. 
+
+      Note that this schema does not define a target namespace. The expectation is that
+      the qualifieddc element is assigned to a namespace by an application schema 
+      which includes this schema.
+      
+    </xs:documentation>
+
+  </xs:annotation>
+
+      <xs:import namespace="http://purl.org/dc/terms/"
+                 schemaLocation="dcterms.xsd"/>
+
+      <xs:import namespace="http://naca.central.cranfield.ac.uk/uketd/terms/"
+                 schemaLocation="uketdterms.xsd"/>
+
+      <xs:element name="uketddc" type="dcterms:elementOrRefinementContainer"/>
+
+</xs:schema>
