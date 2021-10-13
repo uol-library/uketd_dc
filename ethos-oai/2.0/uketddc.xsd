@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:dcterms="http://purl.org/dc/terms/"
@@ -21,17 +24,16 @@
       Note that this schema does not define a target namespace. The expectation is that
       the qualifieddc element is assigned to a namespace by an application schema 
       which includes this schema.
-      
-    </xs:documentation>
 
+    </xs:documentation>
   </xs:annotation>
 
-      <xs:import namespace="http://purl.org/dc/terms/"
-                 schemaLocation="dcterms.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/"
+             schemaLocation="dcterms.xsd"/>
 
-      <xs:import namespace="http://naca.central.cranfield.ac.uk/uketd/terms/"
-                 schemaLocation="uketdterms.xsd"/>
+  <xs:import namespace="{{site.url | append: page.dir}}terms/"
+             schemaLocation="uketdterms.xsd"/>
 
-      <xs:element name="uketddc" type="dcterms:elementOrRefinementContainer"/>
+  <xs:element name="uketddc" type="dcterms:elementOrRefinementContainer"/>
 
 </xs:schema>

@@ -1,8 +1,11 @@
+---
+layout: none
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
-            xmlns="http://naca.central.cranfield.ac.uk/uketd/uketd_dc/"
-            targetNamespace="http://naca.central.cranfield.ac.uk/uketd/"
+	    xmlns="{{site.url | append: page.dir}}uketd_dc/"
+	    targetNamespace="{{site.url | append: page.dir}}"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
 
@@ -32,6 +35,6 @@
 
   </xs:annotation>
 
-   <xs:include schemaLocation="uketddc.xsd"/>
+  <xs:include schemaLocation="uketddc.xsd"/>
 
 </xs:schema>

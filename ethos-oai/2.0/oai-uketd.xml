@@ -1,10 +1,13 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
   <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" 
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ 
                                http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
   <responseDate>2002-11-13T12:52:33Z</responseDate>
-<request verb="GetRecord" identifier="oai:ethos.ac.uk:1" metadataPrefix="uketd_dc">http://naca.central.cranfield.ac.uk/uketd/</request>
+  <request verb="GetRecord" identifier="oai:ethos.ac.uk:1" metadataPrefix="uketd_dc">http://ethos.ac.uk/oai/</request>
   <GetRecord>
     <record>
       <header>
@@ -13,12 +16,12 @@
       </header>
       <metadata>
 <uketd_dc:uketddc
-             xmlns:uketd_dc="http://naca.central.cranfield.ac.uk/uketd/"
+	xmlns:uketd_dc="{{site.url | append: page.dir}}"
              xmlns:dc="http://purl.org/dc/elements/1.1/"
              xmlns:dcterms="http://purl.org/dc/terms/"
-             xmlns:uketdterms="http://naca.central.cranfield.ac.uk/uketd/terms/"
+	     xmlns:uketdterms="{{site.url | append: page.dir}}terms/"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://naca.central.cranfield.ac.uk/uketd/ http://naca.central.cranfield.ac.uk/uketd/uketd_dc.xsd">
+	     xsi:schemaLocation="{{site.url | append: page.dir}} {{site.url | append: page.dir}}uketd_dc.xsd">
   <dc:title>Title</dc:title>
   <dcterms:alternative>Alternative Title</dcterms:alternative>
   <dc:creator>Author</dc:creator>
