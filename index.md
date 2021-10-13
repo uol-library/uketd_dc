@@ -1,6 +1,19 @@
 # Example GitHub pages site hosting UKETD_DC xsd files
 
-http://ethos.library.leeds.ac.uk/ethos-oai/2.0/uketd_dc.xsd
+## Files contained in initial zip
+
+### XSD files
+- [dc.xsd](/ethos-oai/2.0/dc.xsd)
+- [dcmitype.xsd](/ethos-oai/2.0/dcmitype.xsd)
+- [dcterms.xsd](/ethos-oai/2.0/dcterms.xsd)
+- [uketd_dc.xsd](/ethos-oai/2.0/uketd_dc.xsd)
+- [uketddc.xsd](/ethos-oai/2.0/uketddc.xsd)
+- [uketdterms.xsd](/ethos-oai/2.0/uketdterms.xsd)
+
+### Example XML files
+- [oai-uketd.xml](/ethos-oai/2.0/oai-uketd.xml)
+- [uketd.xml](/ethos-oai/2.0/uketd.xml)
+
 
 This site is designed to host schema files that were previously held at http://naca.central.cranfield.ac.uk/ethos-oai/
 e.g. http://naca.central.cranfield.ac.uk/ethos-oai/2.0/uketd_dc.xsd
