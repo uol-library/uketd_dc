@@ -1,1 +1,5 @@
-url: schema.ethos.bl.uk
+# Base path that will be added to XSDs
+# XSDs are in a subdirectory, so URL will be [path defined below]/ethos-oai/2.0/...
+# url: schema.bl.uk
+# url: ethos.library.leeds.ac.uk
+
