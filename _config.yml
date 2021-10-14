@@ -2,9 +2,4 @@
 # XSDs are in a subdirectory, so URL will be [path defined below]/ethos-oai/2.0/...
 # url: schema.bl.uk
 # url: ethos.library.leeds.ac.uk
-defaults:
-  -
-    scope:
-      path: "ethos-oai"
-    values:
-      layout: null
+
