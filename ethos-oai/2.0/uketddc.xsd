@@ -31,7 +31,7 @@ layout: null
   <xs:import namespace="http://purl.org/dc/terms/"
              schemaLocation="dcterms.xsd"/>
 
-  <xs:import namespace="{{site.url | append: page.dir}}terms/"
+     <xs:import namespace="{{site.url}}/uketd/terms/"
              schemaLocation="uketdterms.xsd"/>
 
   <xs:element name="uketddc" type="dcterms:elementOrRefinementContainer"/>

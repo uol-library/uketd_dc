@@ -3,12 +3,12 @@ layout: null
 ---
 <?xml version="1.0" ?>
 <uketddc
-             xmlns="http://naca.central.cranfield.ac.uk/uketd/"
+	xmlns="{{site.url}}/uketd/"
              xmlns:dc="http://purl.org/dc/elements/1.1/"
              xmlns:dcterms="http://purl.org/dc/terms/"
-	     xmlns:uketdterms="{{site.url | append: page.dir}}terms/"
+	     xmlns:uketdterms="{{site.url}}/uketd/terms/"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	     xsi:schemaLocation="{{site.url | append: page.dir}} {{site.url | append: page.dir}}uketd_dc.xsd">
+	     xsi:schemaLocation="{{site.url}}/uketd/ {{site.url | append: page.dir}}uketd_dc.xsd">
   <dc:title>Title</dc:title>
   <dcterms:alternative>Alternative Title</dcterms:alternative>
   <dc:creator>Author</dc:creator>
